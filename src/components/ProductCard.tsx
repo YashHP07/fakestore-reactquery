@@ -1,30 +1,3 @@
-// import { Product } from '../types/Product';
-// import { useCart } from '../hooks/useCart';
-
-// interface ProductCardProps {
-//     product: Product;
-// }
-
-// export default function ProductCard({ product }: ProductCardProps) {
-//     const { addToCart } = useCart();
-
-//     return (
-//         <div className="border p-4 rounded shadow">
-//             <img src={product.image} alt={product.title} className="h-48 w-full object-cover" />
-//             <h2 className="text-lg font-bold">{product.title}</h2>
-//             <p>${product.price}</p>
-//             <button
-//                 className="bg-blue-500 text-white p-2 mt-2 w-full"
-//                 onClick={() => addToCart(product)}
-//             >
-//                 Add to Cart
-//             </button>
-//         </div>
-//     );
-// }
-
-
-
 
 
 import { Product } from '../types/Product';
