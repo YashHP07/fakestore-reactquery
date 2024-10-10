@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 "use client"; // Add this line to indicate this is a client component
 
 import { useQuery } from 'react-query';
