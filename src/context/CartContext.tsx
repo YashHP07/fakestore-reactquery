@@ -62,7 +62,7 @@ export function useCart() {
   return context;
 }
 
-// import { createContext, useContext, useState, ReactNode } from 'react';
+
 // import { Product } from '../types/Product';
 
 // interface CartItem extends Product {

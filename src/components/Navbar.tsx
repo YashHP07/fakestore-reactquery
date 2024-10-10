@@ -1,36 +1,3 @@
-// export default function Navbar() {
-//     return (
-//         <nav className="bg-blue-500 p-4">
-//             <h1 className="text-white text-2xl font-bold">E-Commerce Store</h1>
-//         </nav>
-//     );
-// }
-
-
-// import { useCart } from '../hooks/useCart';
-// import Link from 'next/link'; // Assuming you're using React Router
-
-// export default function Navbar() {
-//     const { cart } = useCart();
-
-//     return (
-//         <nav className="bg-blue-500 p-4 flex justify-between items-center">
-//             <h1 className="text-white text-2xl font-bold">E-Commerce Store</h1>
-//             <Link href="/cart" className="text-white">
-//                 <div className="relative">
-//                     <span className="material-icons">shopping_cart</span> {/* Use an icon here */}
-//                     {cart.length > 0 && (
-//                         <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs">
-//                             {cart.length}
-//                         </span>
-//                     )}
-//                 </div>
-//             </Link>
-//         </nav>
-//     );
-// }
-
-
 
 // src/components/Navbar.tsx
 import { useCart } from '../hooks/useCart';

@@ -1,3 +1,4 @@
+
 // "use client"; // Add this line to indicate this is a client component
 
 // import { useQuery } from 'react-query';
@@ -16,8 +17,8 @@
 //         fetcher('https://fakestoreapi.com/products')
 //     );
 
-//     if (isLoading) return <div>Loading...</div>;
-//     if (error) return <div>Error loading products.</div>;
+//     if (isLoading) return <div className="text-center text-xl font-bold animate-pulse">Loading...</div>;
+//     if (error) return <div className="text-center text-red-600 text-xl">Error loading products.</div>;
 
 //     // Filter products based on search query and selected category
 //     const filteredProducts = data?.filter(product => {
@@ -37,13 +38,22 @@
 //     });
 
 //     return (
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-//             {sortedProducts?.map((product) => (
-//                 <ProductCard key={product.id} product={product} />
-//             ))}
+//         <div className="p-8 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100">
+//             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+//                 {sortedProducts?.map((product) => (
+//                     <ProductCard key={product.id} product={product} />
+//                 ))}
+//             </div>
 //         </div>
 //     );
 // }
+
+
+
+
+
+
+
 
 
 
@@ -86,8 +96,8 @@ export default function ProductList({ searchQuery, selectedCategory, sortOption 
     });
 
     return (
-        <div className="p-8 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="p-8 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 min-h-screen">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {sortedProducts?.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
@@ -95,4 +105,5 @@ export default function ProductList({ searchQuery, selectedCategory, sortOption 
         </div>
     );
 }
+
 
