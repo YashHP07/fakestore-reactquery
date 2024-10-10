@@ -1,16 +1,14 @@
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+// src/hooks/useCart.tsx
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 export function useCart() {
-    const context = useContext(CartContext);
-    if (!context) {
-        throw new Error('useCart must be used within a CartProvider');
-    }
-    return context;
+  const context = useContext(CartContext);
+  if (!context) {
+    throw new Error("useCart must be used within a CartProvider");
+  }
+  return context;
 }
-
-
-
 
 // import { useState, createContext, useContext } from 'react';
 // import { Product } from '../types/Product';
@@ -78,6 +76,3 @@ export function useCart() {
 //         </CartContext.Provider>
 //     );
 // };
-
-
-
